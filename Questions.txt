@@ -1,4 +1,15 @@
-1. What are the main features of Real-Time Operating Systems and how do they differ from regular OS’s?
+# 1. What are the main features of Real-Time Operating Systems and how do they differ from regular OS’s?
+    Main features of Real-Time Operating System;
+    1-It does not offer very high speed, it promises to meet its deadline for a given timeline,
+    2-Handling of interrupts and internal system exception,
+    3-Scheduling mechanism.
+       How Real-Time Operating Systems they differ from regular OS’s
+    For the RTOS, achieving perdictability or time deterministic nature is more important than throughput,
+    but for the GPOS achieving higher throughput for user convenience is more important.Generally RTOS differs in tree main concept from GPOS;
+    1- Task Schecudling,
+    2- Latency
+    3- Priority inversion.
+
 2. When is it preferable to use STM32 over Arduino, ESP32, PIC or other comparable embedded system?
 3. Let's assume that a few of the peripherals you use have the same hardcoded I2C address. What solution would you use to solve this problem?
 4. Let's assume that there is a hardware module that is attached to the motherboard with a mezzanine connector. Due to the small form factor, the number of pins on the mezzanine connector is much less than the number of pins you need. Assuming that the communication speed is not important, how would you solve this problem?
