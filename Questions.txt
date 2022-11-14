@@ -1,4 +1,4 @@
-# 1. What are the main features of Real-Time Operating Systems and how do they differ from regular OS’s?
+1. What are the main features of Real-Time Operating Systems and how do they differ from regular OS’s?
     Main features of Real-Time Operating System;
     1-It does not offer very high speed, it promises to meet its deadline for a given timeline,
     2-Handling of interrupts and internal system exception,
@@ -18,7 +18,9 @@
 
 3. Let's assume that a few of the peripherals you use have the same hardcoded I2C address. What solution would you use to solve this problem?
 4. Let's assume that there is a hardware module that is attached to the motherboard with a mezzanine connector. Due to the small form factor, the number of pins on the mezzanine connector is much less than the number of pins you need. Assuming that the communication speed is not important, how would you solve this problem?
+
+
 5. Let's say you want about 30 hardware modules to communicate with each other. There is one STM32 microcontroller on each module, and the modules can be removed and installed instantly. Which communication standard would you use for these modules to communicate effectively with each other? Why?
-    If speed is very important, I will use SPI communication standart. But if speed is not important I use I2C communication standart. Because the usage of I2C is very simple you only need two wire for communication. Also I2C supports multi master and multi slave but SPI supports single master. But here is an a bug, if i remove all master from I2C what will be happen? The communication between modules will be finish. To solve this problem i will use CAN communication standart because in it every module can behave as Master or Slave.  
+        If speed is very important, I will use SPI communication standart. But if speed is not important I use I2C communication standart. Because the      usage of I2C is very simple you only need two wire for communication. Also I2C supports multi master and multi slave but SPI supports single master. But here is an a bug, if i remove all master from I2C what will be happen? The communication between modules will be finish. To solve this problem i will use CAN   communication standart because in it every module can behave as Master or Slave.  
 
 6. 3 devices with identical embedded software and hardware are required to communicate over I2C. What kind of solution would you develop so that devices can be dynamically addressed and recognize each other?
